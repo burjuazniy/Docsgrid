@@ -1,6 +1,7 @@
 package entities;
 
-import entities.Abstaract.BaseEntity;
+
+import entities.abstracts.BaseEntity;
 import exceptions.DocumentTemplateValidationException;
 
 import java.util.HashSet;

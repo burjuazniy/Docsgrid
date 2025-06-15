@@ -1,6 +1,6 @@
 package entities;
 
-import entities.User.Employee;
+import entities.user.Employee;
 import exceptions.SignatoryValidationException;
 
 public class Signatory {

@@ -1,7 +1,7 @@
 package entities;
 
-import entities.Abstaract.BaseEntity;
-import entities.User.Employee;
+import entities.abstracts.BaseEntity;
+import entities.user.Employee;
 import exceptions.DocumentTemplateValidationException;
 import exceptions.DocumentValidationException;
 import exceptions.SignatoryValidationException;
@@ -64,8 +64,9 @@ public class Document extends BaseEntity {
 
         String someStructure = "I, {{name1}}, sign this document with {{name2}}.";
         try {
-            Employee emp1 = new Employee("111-222-333", "12345", "John", "Manager");
-            Employee emp2 = new Employee("222-111-333", "12345", "Bob", "Manager");
+            Company company = new Company(1, "SSU");
+            Employee emp1 = new Employee("111-222-333", "12345", "John", "Manager", company);
+            Employee emp2 = new Employee("222-111-333", "12345", "Bob", "Manager", company);
 
             DocumentTemplate docTemplate = new DocumentTemplate(0, someStructure, "Test Template");
 

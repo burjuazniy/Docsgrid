@@ -68,6 +68,7 @@ public class ConsoleDriver {
         // TODO: System.out.println("Company: " + emp.getCompany().getName());
         System.out.println("Job position: " + emp.getJobPosition());
         System.out.println("TIN: " + emp.getTIN());
+        System.out.println("company: " + emp.getCompany().getCompanyName());
 
         System.out.println("\n----- Menu -----");
         System.out.println("1) Create new document");
